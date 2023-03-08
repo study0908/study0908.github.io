@@ -6,7 +6,7 @@
   <link href="https://study0908.github.io/atom.xml" rel="self"/>
   
   <link href="https://study0908.github.io/"/>
-  <updated>2023-02-27T17:09:35.847Z</updated>
+  <updated>2023-03-08T10:33:31.411Z</updated>
   <id>https://study0908.github.io/</id>
   
   <author>
@@ -17,12 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>My First Blog Hexo Hello!</title>
-    <link href="https://study0908.github.io/2023/02/28/My-First-Blog-Hexo-Hello/"/>
-    <id>https://study0908.github.io/2023/02/28/My-First-Blog-Hexo-Hello/</id>
-    <published>2023-02-27T17:09:35.000Z</published>
-    <updated>2023-02-27T17:09:35.847Z</updated>
+    <title>Java语言的特点</title>
+    <link href="https://study0908.github.io/2023/03/08/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>https://study0908.github.io/2023/03/08/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+    <published>2023-03-08T10:29:07.000Z</published>
+    <updated>2023-03-08T10:33:31.411Z</updated>
     
+    <content type="html"><![CDATA[<h6 id="1-简单易学；"><a href="#1-简单易学；" class="headerlink" title="1.简单易学；"></a>1.简单易学；</h6><h6 id="2-面向对象（封装、继承、多态）；"><a href="#2-面向对象（封装、继承、多态）；" class="headerlink" title="2.面向对象（封装、继承、多态）；"></a>2.面向对象（封装、继承、多态）；</h6><span id="more"></span><p>面向：orirented，就是按照怎样的思路进行编程<br>面向过程：<br>过程：procedure 有返回值<br>函数：function 没有返回值</p><p>面向过程编程就是把代码分解为一个个过程和函数<br>（软件工程中学过）即：函数（过程）是最小的模块封装单位</p><p>面向对象编程：</p><p>面向对象：Object Oriented（OO）<br>(台湾叫物件导向)</p><p>多线程（台湾叫法：执行绪）</p><p>override（覆盖）：<br>overload重载：</p><p>包（java）&#x2F;命名空间（C&#x2F;php），接口&#x2F;抽象类，类，对象</p><p>类：方法&#x2F;行为：函数&#x2F;过程；<br>    属性&#x2F;成员变量：其实就是变量</p><pre><code>方法名为动词（run，go），属性名为名词（name，age）</code></pre><p>多用继承（hasA），少用继承（isA）</p><p>面向对象6原则：<br>    1.迪米特原则：（一个软件实体应该尽量少的与其他实体发生相互作用）<br>    2.合成聚合复用原则：（尽量使用合成、聚合，和不是继承关系达到复用目的）<br>    3.接口隔离原则：（为客户端提供尽可能小的单独接口，不要提供）<br>    4.开闭原则：（对扩展开放，对修改关闭）<br>    5.里氏代换原则：（任何基类可以出现的地方，子类一定可以出现）<br>    6.依赖倒转原则：（依赖于对象，不要依赖于实现）<br>基于以上6点，诞生出23种设计模式.</p><p>（面向对象和基于对象的区别）<br>（面向对象和面向过程的区别）</p><h4 id="3-平台无关性（Write-Once，Run-Anywhere）"><a href="#3-平台无关性（Write-Once，Run-Anywhere）" class="headerlink" title="3.平台无关性（Write Once，Run Anywhere）"></a>3.平台无关性（Write Once，Run Anywhere）</h4><p>   用java创建的可执行二进制程序，能够不加改变的运行于多个平台。因为java的平台无关性，java程序可以运行在各种各样的设备上，尤其是一些嵌入式设备，例如打印机、扫描仪、传真机。随着5G时代的来临，也会有更多的终端接入网络，相信平台无关性的java也能做出一些贡献。</p><p>   对于Java开发者来说，Java的平台无关性减少了开发和部署到多个平台的成本和时间，真正的做到一次编译，到处运行。</p><p>   Java有句非常有名的口号——“一次编写，到处运行”，依靠的就是JVM提供的平台独立性，本质上来讲，就是通过虚拟机技术，通过限制一些功能，达到屏蔽底层细节的目的。更具体得说，Java的平台独立性体现在两个方面：体系结构无关、可移植。</p><p>体系结构无关</p><pre><code> JVM里设计了一套字节码指令系统，这套指令系统跟特定的体系结构没有关系。精心设计的字节码不仅可以在各个机器上运行，还可以迅速得翻译成本地机器的代码。解释字节码运行肯定比先编译后运行慢得多，因此虚拟机提供了即时编译子系统，用于将使用最频繁的字节码翻译成本地指令，这个策略十分有效。</code></pre><p>可移植</p><pre><code>与C和C++不同，Java规范中没有“依赖具体实现”的地方，基本数据类型的大小以及有关的算法都做了明确的定义。例如：在Java中int永远为32位整数，而在C/C++中，int可能是16位整数、32位整数，也可能是编译器提供商指定的其他大小。作为系统组成部分的类库，定义了可移植的接口。例如：一个抽象的Window类给出了在UNIX、Windows和Mac OS环境不同的实现；文件路径分隔符——File.separator，针对不同的文件系统也有不同的实现。</code></pre><h6 id="4-支持多线程；"><a href="#4-支持多线程；" class="headerlink" title="4.支持多线程；"></a>4.支持多线程；</h6><h6 id="5-可靠性；"><a href="#5-可靠性；" class="headerlink" title="5.可靠性；"></a>5.可靠性；</h6><h6 id="6-安全性；"><a href="#6-安全性；" class="headerlink" title="6.安全性；"></a>6.安全性；</h6><h6 id="7-支持网络编程，并且很方便；"><a href="#7-支持网络编程，并且很方便；" class="headerlink" title="7.支持网络编程，并且很方便；"></a>7.支持网络编程，并且很方便；</h6><p>（ Java 语言诞生本身就是为简化网络编程设计的，因此 Java 语言不仅支持网络编程而且很方便）</p><h6 id="8-编译与解释并存；"><a href="#8-编译与解释并存；" class="headerlink" title="8.编译与解释并存；"></a>8.编译与解释并存；</h6>]]></content>
+    
+    
+    <summary type="html">&lt;h6 id=&quot;1-简单易学；&quot;&gt;&lt;a href=&quot;#1-简单易学；&quot; class=&quot;headerlink&quot; title=&quot;1.简单易学；&quot;&gt;&lt;/a&gt;1.简单易学；&lt;/h6&gt;&lt;h6 id=&quot;2-面向对象（封装、继承、多态）；&quot;&gt;&lt;a href=&quot;#2-面向对象（封装、继承、多态）；&quot; class=&quot;headerlink&quot; title=&quot;2.面向对象（封装、继承、多态）；&quot;&gt;&lt;/a&gt;2.面向对象（封装、继承、多态）；&lt;/h6&gt;</summary>
     
     
     
@@ -31,18 +35,32 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://study0908.github.io/2023/02/28/hello-world/"/>
-    <id>https://study0908.github.io/2023/02/28/hello-world/</id>
-    <published>2023-02-27T17:04:15.553Z</published>
-    <updated>2023-02-27T17:04:15.553Z</updated>
+    <link href="https://study0908.github.io/2023/03/08/hello-world/"/>
+    <id>https://study0908.github.io/2023/03/08/hello-world/</id>
+    <published>2023-03-08T10:26:13.000Z</published>
+    <updated>2023-03-08T10:26:40.370Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p> <span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>My First Blog Hexo Hello!</title>
+    <link href="https://study0908.github.io/2023/02/28/My-First-Blog-Hexo-Hello/"/>
+    <id>https://study0908.github.io/2023/02/28/My-First-Blog-Hexo-Hello/</id>
+    <published>2023-02-27T17:09:35.000Z</published>
+    <updated>2023-03-08T10:24:36.469Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是我的第一篇博客！</p><span id="more"></span><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p><em>斜体字</em><br><strong>加粗字体</strong></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这是我的第一篇博客！&lt;/p&gt;</summary>
     
     
     
